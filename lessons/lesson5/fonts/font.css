@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'FuzzyBubbles-Regular';
+  src: url('FuzzyBubbles-Regular.eot');
+  src: url('FuzzyBubbles-Regular.eot?#iefix') format('embedded-opentype'),
+       url('FuzzyBubbles-Regular.svg#FuzzyBubbles-Regular') format('svg'),
+       url('FuzzyBubbles-Regular.ttf') format('truetype'),
+       url('FuzzyBubbles-Regular.woff') format('woff'),
+       url('FuzzyBubbles-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
