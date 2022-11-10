@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stars{
+            float: left;
+        }
+        .star{
+            width: 50px;
+            height: 50px;
+            border: 1px solid red;
+            float: right;
+        }
+        .star:hover ~ div, .star:hover{
+            background-color: red;
+        } 
+
+        td:nth-child(even){
+            width: 2px;
+            height: 20px;
+            background-color: red;
+        }
+
+        li{
+            border-right: 2px solid red;
+            float: left;
+            list-style-type: none;
+        }
+        .border{
+            background: url('') center no-repeat, url('') center no-repeat,url('') center no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="border"></div>
+
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <hr style="clear: both">
+
+    <table>
+        <tr>
+            <td><a href="">Link</a></td>
+            <td></td>
+            <td><a href="">Link</a></td>
+            <td></td>
+            <td><a href="">Link</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <ul>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+    </ul>
+   
+</body>
+</html>
