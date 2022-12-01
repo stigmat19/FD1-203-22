@@ -6,8 +6,7 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    background: #E5E5E5;
-    height: 10000px;
+    background: #6f6f6f;
 }
 .container{
     width: 1410px;
@@ -15,6 +14,7 @@ body{
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
+    /* background-color: rgb(246, 172, 35); */
 }
 
 a{
@@ -23,6 +23,7 @@ a{
 }
 ul{
     margin-bottom: 0;
+    padding-left: 0;
 }
 li{
     list-style-type: none;
@@ -147,6 +148,16 @@ h3{
     border: none;
     vertical-align: super;
 }
+.header__top--search{
+    width: 20px;
+    height: 20px;
+    background: url("../img/search.svg") center no-repeat;
+    background-size: contain;
+    /* display: none; */
+    float: right;
+    margin-right: 30px;
+    margin-top: 7px;
+}
 
 /* header__menu */
 .header__menu{
@@ -206,8 +217,11 @@ h3{
 .menu__icons li:nth-child(2){
     background: url("../img/like.svg") no-repeat center;
 }
-.menu__icons li:last-child{
+.menu__icons li:nth-child(3){
     background: url("../img/basket.svg") no-repeat center;
+}
+.menu__icons li:last-child{
+    background: url("../img/burger.svg") no-repeat center;
     margin-right: 0;
 }
 /* header__bottom */
@@ -371,6 +385,7 @@ li.vline{
 /* stock */
 .stock{
     padding-top: 120px;
+    padding-bottom: 100px;
 }
 .stock h3{
     margin-top: 0;
@@ -522,4 +537,83 @@ span.other{
     left: 17px;
     top: 10px;
     background: url('../img/basket.svg') center no-repeat;
+}
+
+/* footer */
+.footer{
+    background-color:#1A1A25;
+    padding-top: 88px;
+    padding-bottom: 28px;
+    color: #858FA4;
+}
+.list-wrap{
+    float: left;
+}
+.list-wrap ul{
+    width: 210px;
+    float: left;
+    margin-right: 40px;
+}
+
+.list-wrap ul li:first-child{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.list-wrap ul li{
+    margin-bottom: 12px;
+}
+.list-wrap ul li a:hover{
+    color: #fff;
+}
+.subscribe{
+    float: right;
+    width: 260px;
+}
+.subscribe input{
+    width: 100%;
+    height: 48px;
+    background: rgba(133, 143, 164, 0.15);
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 140%;
+    color: #858FA4;
+    border: none;
+    padding: 14px;
+    margin-bottom: 50px;
+    background: url("../img/subscribe.svg") right 20px center no-repeat rgba(133, 143, 164, 0.15);
+}
+.subscribe a:first-of-type,
+.subscribe a:nth-of-type(2)
+{
+    font-weight: 500;
+    line-height: 140%;
+    color: #858FA4;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.subscribe a:nth-of-type(3),
+.subscribe a:nth-of-type(5){
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 23px;
+    display: inline-block;
+}
+.subscribe a:nth-of-type(5){
+    margin-bottom: 40px;
+}
+.subscribe a:nth-of-type(4){
+    line-height: 19px;
+    color: #858FA4;
+}
+.subscribe a:nth-of-type(6),
+.subscribe a:last-child{
+    font-size: 14px;
+    line-height: 140%;
+    color: #4B7EE8;
+    margin-bottom: 7px;
+    display: inline-block;
 }
