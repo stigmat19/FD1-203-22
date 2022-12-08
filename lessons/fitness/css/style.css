@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Inter', sans-serif;
-    background: #6f6f6f;
+    background: #F7F7F7;
 }
 .container{
     width: 1410px;
@@ -14,7 +14,6 @@ body{
     margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-    /* background-color: rgb(246, 172, 35); */
 }
 
 a{
