@@ -163,10 +163,7 @@ for(var i=0; i<products.length; i++){
         <p class="rating">
             Рейтинг
             ${ratingHtml}
-        </p>
-    
-        <div class="price">
-            <div>
+        </p>.menu__icons li:last-childiv>
                 <p class="current__price">${products[i].newPrice}</p>
                 <p class="old__price">${products[i].oldPrice}</p>
             </div>
@@ -176,4 +173,24 @@ for(var i=0; i<products.length; i++){
     </li>` 
 }
 
-ul.innerHTML = str
+ul.innerHTML = str;
+
+function openMenu(){
+    var menu = document.querySelector('.main__menu');
+    var btn = document.querySelector('.menu__icons li:last-child');
+    
+    var isOpenMenu = menu.getAttribute('data-open');
+    if(isOpenMenu === 'false'){
+        menu.style.right = '0%';
+        btn.style.background = 'none';
+        btn.style.fontSize = '31px'
+        btn.innerHTML = 'X';
+        menu.setAttribute('data-open', 'true')
+    } else {
+        menu.style.right = '-100%';
+        btn.style.background = 'url("img/burger.svg") no-repeat center';
+        btn.style.fontSize = '31px'
+        btn.innerHTML = '';
+        menu.setAttribute('data-open', 'false')
+    }
+}
