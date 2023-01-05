@@ -410,7 +410,19 @@ li.vline{
     width: 300px;
     height: 505px;
     padding: 10px 20px 26px;
-    background: url(../img/stock-img.png) top 4px left 12px no-repeat #fff;
+    background: top 4px left 12px no-repeat #fff;
+}
+.stock ul li.img1{
+    background-image: url(../img/stock-img.png);
+}
+.stock ul li.img2{
+    background-image: url(../img/stock-img1.png);
+}
+.stock ul li.img3{
+    background-image: url(../img/stock-img2.png);
+}
+.stock ul li.img4{
+    background-image: url(../img/stock-img3.png);
 }
 .stock__card--left{
     float: left;
@@ -474,6 +486,7 @@ span.other{
     margin-right: 30px;
     border-radius: 6px;
     transition: 0.5s;
+    margin-bottom: 20px;
 }
 .stock ul li:hover{
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.12)) drop-shadow(0px 4px 30px rgba(19, 15, 38, 0.1));
