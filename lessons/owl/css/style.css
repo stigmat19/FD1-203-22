@@ -1,0 +1,7 @@
+.owl-carousel {
+    width: 1130px;
+    margin: 0 auto;
+}
+.owl-item{
+    background: red;
+}
